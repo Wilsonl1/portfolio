@@ -1,0 +1,252 @@
+/*
+Student Name: Lori Wilson
+File Name: styles.css
+Date: 09/26/2022
+*/
+
+/* css reset */
+body, header, h1, img, nav, main, footer, ul, section, article, figure, figcaption {
+	margin: 0;
+	padding: 0;
+	border: 0;	
+}
+
+/* Style rule for images */
+img {
+	max-width: 100%;
+	display: block;
+}
+
+.center {
+	margin: 0 auto;
+}
+
+/* Style rules for mobile viewport */
+
+/* Style rule to hide tablet-desk class */
+.mobile {
+    display: block;
+}
+
+.tablet-desk, #menu-links {
+  display:none;
+}
+
+/* Style rule for header content */
+header {
+	text-align: center;
+	font-size: 1.5em;
+	color: #800000
+}
+
+header h1 {
+	font-style: italic;
+	font-family: 'DM Serif Display', serif;
+}	
+
+/* Style rules for hamburger menu */
+.mobile-nav a {
+	color: #800000;
+	font-family: 'Francois One', sans-serif;
+	text-align: center;
+	font-size: 2em;
+	text-decoration: none;
+	padding: 3%;
+	display: block;
+}
+
+.mobile-nav a.menu-icon {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+/* Style rules for main content */
+main {
+	padding: 2%;
+	background-color: #008080;
+}	
+
+main p {
+	font-size: 1.75em;
+}
+
+.action {
+	font-size: 1.25em;
+	color: #fff;
+	font-weight: bold;
+	text-shadow: 4px 4px 8px #ccc;
+}
+
+#NTHS, #STUCO, #PANTRY {
+	margin: 2%;
+}
+
+.round {
+	border-radius: 8px;
+}
+
+#contact {
+	text-align: center;
+}
+
+#contact a {
+	color: #800000;
+	text-decoration: none;
+}
+
+.map {
+  border: 4px solid #000;
+  width: 95%;
+  height: 50%;
+}
+
+table {
+	border: 1px solid;
+	border-collapse: collapse;
+	margin: 0 auto;
+	width: 100%;
+	box-shadow: 12px 12px 10px;
+}
+
+caption {
+	font-size: 1.5em;
+	font-weight: bold;
+	padding: 1%;
+	color: #fff;
+	margin-top: 2%
+}
+
+th, td {
+	background-color: #800000;
+	color: #fff;
+	font-size: 1.15em;
+}
+
+/* Style rule for th creates a border */
+th {
+  border: #fff solid 1px;
+}
+
+/* Style rule for td creates a border */
+td {
+  border: #fff solid 1px;
+}
+
+/* Style rules for form elements */
+fieldset, input  { 
+    margin-bottom: 2%;
+}
+
+fieldset legend {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+
+label {
+    display: block;
+    padding-top: .5%;
+}
+
+form #submit {
+    margin: 0 auto;
+    display: block;
+    padding: .5%;
+    background-color: #800000;
+	color: #fff;
+    font-size: 1em;
+}
+
+/* Style rules for footer content */
+footer {
+	 text-align: center;
+}	
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+	/* Tablet Viewport: Show Tablet-desktop class, hide mobile class */
+	.tablet-desk {
+			display: block;
+	}
+	
+	.mobile {
+			display: none;
+	}
+	
+	/* Tablet viewport: Style rule for header */
+	header {
+		position: static;
+		padding-bottom: 2%;
+	}
+
+	/* Tablet Viewport: Style rules for nav area */
+	nav {
+		background-color: #800000;
+		padding: 1%;
+	}
+
+	nav ul {
+		list-style-type: none;
+		text-align: center;
+	}
+
+	nav li {
+		font-size: 1.5em;
+		border-top: none;
+		display: inline-block;
+		border-right: 1px solid #bc8f8f;
+	}
+
+	nav li:last-child {
+		border-right: none;
+	}
+
+	nav li a {
+		padding: 0.1em 0.7em;
+		display: block;
+		color: #bc8f8f;
+		text-align: center;
+		text-decoration: none;
+	}
+	
+	/* Tablet Viewport: style rules for main content area */
+	main ul {
+		margin: 0 0 4% 10%;
+	}
+	
+	.grid {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 20px;
+	}
+	
+}/* End of tablet viewport query */
+	
+/* Media Query for Desktop Viewport */
+@media screen and (min-width: 1015px), print {
+	
+	/* Desktop viewport: Style rules for nav area */
+	nav li {
+		border: none;
+	}
+	
+	nav li a {
+		padding: 0.5em 1em;
+	}
+	nav li a:hover {
+		color: #000;
+		background-color: #fff;
+		transform: scale(1)
+	}
+	
+	/* Desktop viewport: style rules for main area */
+	/* main {
+		
+	} */
+	
+	article h2 {
+		font-size: 1.75em;
+	}
+	
+}/* End of Desktop viewport query */
